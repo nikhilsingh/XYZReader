@@ -58,15 +58,12 @@
 
                     <TextView
                         android:id="@+id/article_title"
-                        style="@style/TextAppearance.AppCompat.Title"
+                        style="@style/Text.TitleStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-condensed"
                         android:lineSpacingMultiplier="0.9"
                         android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
-                        android:textColor="#fff"
-                        android:textSize="@dimen/detail_title_text_size"
-                        android:textStyle="bold" />
+                        />
 
                     <TextView
                         android:id="@+id/article_byline"
@@ -79,31 +76,30 @@
 
                 <TextView
                     android:id="@+id/article_body"
-                    style="@style/TextAppearance.AppCompat.Body2"
+                    style="@style/Text.Body2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
-                    android:textColor="@color/secondary_text"
-                    android:textColorLink="@color/theme_accent" />
+                    />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </FrameLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
 
-    <ImageButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:background="@drawable/add_fab_background"
-        android:contentDescription="@string/action_share"
-        android:elevation="@dimen/fab_elevation"
+        android:layout_margin="16dp"
         android:src="@drawable/ic_share"
-        android:stateListAnimator="@animator/fab_state_list_anim" />
+        app:elevation="@dimen/fab_elevation"
+        app:fabSize="normal"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        app:rippleColor="@color/theme_primary" />
+
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>

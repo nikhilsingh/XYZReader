@@ -1,15 +1,15 @@
 buildscript {
     repositories {
-        mavenCentral()
+       google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 apply plugin: 'com.android.application'
 
 repositories {
-    mavenCentral()
+    google()
 }
 
 android {
@@ -17,7 +17,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        minSdkVersion 20
+        minSdkVersion 21
         targetSdkVersion 25
     }
     lintOptions{
