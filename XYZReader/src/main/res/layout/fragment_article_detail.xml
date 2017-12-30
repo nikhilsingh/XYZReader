@@ -99,7 +99,7 @@
         app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
         app:pressedTranslationZ="@dimen/fab_press_translation_z"
-        app:rippleColor="@color/theme_primary" />
+         />
 
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
