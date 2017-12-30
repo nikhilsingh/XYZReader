@@ -63,7 +63,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         mSnackbar = Snackbar.make(findViewById(R.id.cl_listactivity),"Please wait till stories load!!",Snackbar.LENGTH_LONG);
-        //final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
