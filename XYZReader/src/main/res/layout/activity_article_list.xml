@@ -11,7 +11,7 @@
         android:layout_height="256dp"
 
         android:background="@color/theme_primary"
-        android:elevation="@dimen/appbar_elevation"
+
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.CollapsingToolbarLayout
